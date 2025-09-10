@@ -1,14 +1,22 @@
 @charset "UTF-8";
 
-* { /*CONFIGURAÇÃO GLOBAL*/
+/* CONFIGURAÇÃO GLOBAL */
+* {
     margin: 0px;
     padding: 0px;
 }
 
-/* import das fontes do Google Fonts */
+/* Import das fontes do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
+/* Declaração da fonte local 'Candy' */
+@font-face {
+    font-family: 'Candy';
+    src: url('../fonte/Candy.otf') format('opentype');
+}
+
+/* Variáveis CSS (Cores e Fontes) */
 :root {
     --corzinza: #231F20;
     --corazul: #06639B;
@@ -18,37 +26,42 @@
 
     --fonte1: 'Work Sans', sans-serif;
     --fonte2: 'Alfa Slab One', serif;
+    --fonte-candy: 'Candy', 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
 }
 
+
 body {
-    
-    font-family:  var(--fonte-padrao);
-     background-image:linear-gradient(to left , var(--corverdeclaro) 50%, var(--corazul));
+    font-family: var(--fonte-padrao);
+    background-image: linear-gradient(to left, var(--corverdeclaro) 50%, var(--corazul));
 }
 
 
-header{ 
-    padding: 10px;
-    background-color: #00B2A9;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    background-image:linear-gradient(to left , var(--corverdeclaro) 50%, var(--corazul));
+header {
+    font-family: var(--fonte1);
+    padding: 20px;
+    background-color: var(--corverdeclaro); /* Use a variável para a cor */
+    background-image: linear-gradient(to left, var(--corverdeclaro) 50%, var(--corazul));
     color: white;
     text-align: center;
-   
 }
 
-header>p {
+header > p {
     padding-bottom: 10px;
     padding-top: 13px;
-    padding-left: 10px;
+    padding-left: 10px; /* Considere usar 'padding' para definir os 4 lados de uma vez */
 }
 
-article {
-    background-color:
-}
-
-
+nav {
+    background-image: linear-gradient(to left, var(--corverdeclaro) 50%, var(--corazul));
+    padding: 10px;
    
+    
+}
+
+nav> a{
+    color: white;
+    text-decoration: none;
+
+
+}
