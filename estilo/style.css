@@ -32,8 +32,9 @@
 
 
 body {
-    font-family: var(--fonte-padrao);
+    font-family: var(--fonte1);
     background-image: linear-gradient(to left, var(--corverdeclaro) 50%, var(--corazul));
+    color: rgb(255, 255, 255)
 }
 
 
@@ -64,4 +65,7 @@ nav> a{
     text-decoration: none;
 
 
+}
+h1{
+    color: white;
 }
