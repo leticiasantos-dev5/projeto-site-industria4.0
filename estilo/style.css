@@ -44,12 +44,14 @@ header {
     /* A fonte foi removida daqui, pois o 'body' já define para todos */
     padding: 20px;
     background-color: var(--corverdeclaro);
-    background-image: linear-gradient(to left, var(--corverdeclaro) 50%, var(--corazul));
+    background-image: linear-gradient(to top,  var(--corazul) 0.3%,  var(--corrosa));
     color: white;
     text-align: center;
     font-size: larger;
     text-shadow: 3px 5px 19px rgb(0, 0, 0);
 }
+
+
 
 header > p {
     padding-bottom: 0.5em;
@@ -61,10 +63,13 @@ header > p {
 
 /* Estilos da Barra de Navegação */
 nav {
-    background-image: linear-gradient(to left, var(--corverdeclaro) 50%, var(--corazul));
+    background-color: var(--corazul);
+    
     padding: 10px;
+    padding-top: 20px;
     text-align: center;
     text-shadow: 3px 5px 19px rgb(0, 0, 0);
+    
 }
 
 nav > a {
@@ -74,6 +79,8 @@ nav > a {
     padding: 20px;
     margin: auto;
     text-shadow: 3px 5px 19px rgb(0, 0, 0);
+    
+    
 }
 
 nav a:hover {
