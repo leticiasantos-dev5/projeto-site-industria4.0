@@ -124,7 +124,7 @@ caption {
 }
 
 thead {
-    background-color: var(--corrosa);
+    background-image: linear-gradient(to top,  var(--corazul) 0.3%,  var(--corrosa));
 }
 
 th, td {
