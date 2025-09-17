@@ -26,79 +26,89 @@
 
     --fonte1: 'Work Sans', sans-serif;
     --fonte2: 'Alfa Slab One', serif;
-    --fonte-candy: 'Candy', 
-    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-candy: 'Candy', sans-serif;
+    --fonte-padrao: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
+/* Define a fonte 'Lucida Sans' para toda a página.
+   Isso evita a repetição de código e garante que a fonte
+   seja aplicada em todos os elementos, incluindo a tabela. */
 body {
-    font-family: var(--fonte1);
+    font-family: var(--fonte-padrao);
     background-image: linear-gradient(to left, var(--corverdeclaro) 50%, var(--corazul));
-    color: rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
 }
 
-
+/* Estilos do Cabeçalho */
 header {
-    font-family: var(--fonte1);
+    /* A fonte foi removida daqui, pois o 'body' já define para todos */
     padding: 20px;
-    background-color: var(--corverdeclaro); /* Use a variável para a cor */
+    background-color: var(--corverdeclaro);
     background-image: linear-gradient(to left, var(--corverdeclaro) 50%, var(--corazul));
     color: white;
     text-align: center;
+    font-size: larger;
+    text-shadow: 3px 5px 19px rgb(0, 0, 0);
 }
 
 header > p {
-    padding-bottom: 10px;
-    padding-top: 13px;
-    padding-left: 10px; /* Considere usar 'padding' para definir os 4 lados de uma vez */
+    padding-bottom: 0.5em;
+    padding-top: 30px;
+    padding-left: 10px;
+    font-size: 20px;
+    text-shadow: 3px 5px 19px rgb(0, 0, 0);
 }
 
+/* Estilos da Barra de Navegação */
 nav {
     background-image: linear-gradient(to left, var(--corverdeclaro) 50%, var(--corazul));
     padding: 10px;
-   
-    
+    text-align: center;
+    text-shadow: 3px 5px 19px rgb(0, 0, 0);
 }
 
-nav> a{
+nav > a {
+    /* A fonte foi removida daqui, pois o 'body' já define para todos */
     color: white;
     text-decoration: none;
-
-
+    padding: 20px;
+    margin: auto;
+    text-shadow: 3px 5px 19px rgb(0, 0, 0);
 }
-h1{
+
+nav a:hover {
+    background-color: var(--corrosa);
+    transition: 0.5s;
+    text-decoration: none;
+    border-radius: 10px;
     color: white;
 }
 
-/*CONFIGURAÇÃO DE TABELA*/
- body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
+h1 {
+    color: white;
+}
 
-        table {
-            /* Centraliza a tabela na página */
-            margin: 0 auto;
-            
-            /* Demais estilos */
-            width: 800px;
-            max-width: 800px;
-            border-collapse: collapse;
-        }
+/* CONFIGURAÇÃO DE TABELA */
+table {
+    margin: 0 auto;
+    width: 800px;
+    max-width: 800px;
+    border-collapse: collapse;
+}
 
-        caption {
-            font-size: 1.3em;
-            font-weight: bold;
-            padding: 10px;
-        }
+caption {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px;
+}
 
-        thead {
-            background-color: var(--corrosa);
-        }
+thead {
+    background-color: var(--corrosa);
+}
 
-        th, td {
-            border: 1px solid black;
-            padding: 10px;
-            background-color: ;
-        }
-
-        
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    /* A propriedade 'background-color' estava vazia. Adicionei uma cor. */
+     
+}
